@@ -1,0 +1,19 @@
+{
+  "name": "shopify-oversell-guard",
+  "version": "0.1.0",
+  "description": "Find Shopify variants that can sell stock you don't have.",
+  "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "audit": "node --env-file-if-exists=.env src/cli.ts audit",
+    "test": "node --test",
+    "typecheck": "tsc"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "typescript": "^7.0.2"
+  }
+}
